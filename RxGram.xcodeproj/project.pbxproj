@@ -16,7 +16,11 @@
 		4AC6665D21F6152D00F329C0 /* RxGramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6665C21F6152D00F329C0 /* RxGramTests.swift */; };
 		4AC6666821F6152D00F329C0 /* RxGramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6666721F6152D00F329C0 /* RxGramUITests.swift */; };
 		4AC6667D21F615D900F329C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC6667C21F615D900F329C0 /* Main.storyboard */; };
-		4AC6668021F617A200F329C0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6667F21F617A200F329C0 /* MainViewController.swift */; };
+		4AC6668321F61D4A00F329C0 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6668221F61D4A00F329C0 /* MainTabBarController.swift */; };
+		4AC6668821F61D8700F329C0 /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC6668721F61D8700F329C0 /* Timeline.storyboard */; };
+		4AC6668A21F61DAC00F329C0 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6668921F61DAC00F329C0 /* TimelineViewController.swift */; };
+		4AC666A721F674C600F329C0 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC666A621F674C600F329C0 /* Storyboard.swift */; };
+		4AC666A921F6765200F329C0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC666A821F6765200F329C0 /* UIViewController.swift */; };
 		753227AF01249F357ECC9A3B /* Pods_RxGramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28429181F1A7B541D3903781 /* Pods_RxGramUITests.framework */; };
 		9AB50565B934DC3137A9DC41 /* Pods_RxGramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26E78E67D3F83A2B00892DF /* Pods_RxGramTests.framework */; };
 /* End PBXBuildFile section */
@@ -58,7 +62,11 @@
 		4AC6666721F6152D00F329C0 /* RxGramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxGramUITests.swift; sourceTree = "<group>"; };
 		4AC6666921F6152D00F329C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AC6667C21F615D900F329C0 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		4AC6667F21F617A200F329C0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4AC6668221F61D4A00F329C0 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		4AC6668721F61D8700F329C0 /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
+		4AC6668921F61DAC00F329C0 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		4AC666A621F674C600F329C0 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		4AC666A821F6765200F329C0 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		53F373B8DBE94F912E61BE55 /* Pods-RxGramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxGramUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxGramUITests/Pods-RxGramUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AFC804DF7640F9AF6220FF50 /* Pods-RxGramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxGramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxGramTests/Pods-RxGramTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5834B2D10F6E4B8C73C820 /* Pods-RxGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxGram/Pods-RxGram.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +114,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4A0F9C0A21FB5A7600EEDC5A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		4AC6663B21F6152C00F329C0 = {
 			isa = PBXGroup;
 			children = (
@@ -131,9 +146,11 @@
 		4AC6664621F6152C00F329C0 /* RxGram */ = {
 			isa = PBXGroup;
 			children = (
+				4AC666A521F674AF00F329C0 /* Helpers */,
 				4AC6667621F6156D00F329C0 /* Modules */,
-				4AC6667521F6156800F329C0 /* App */,
+				4A0F9C0A21FB5A7600EEDC5A /* Services */,
 				4AC6667A21F6159800F329C0 /* Ressources */,
+				4AC6667521F6156800F329C0 /* App */,
 			);
 			path = RxGram;
 			sourceTree = "<group>";
@@ -170,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				4AC6667B21F615CA00F329C0 /* Main */,
+				4AC6668421F61D6400F329C0 /* Timeline */,
 				4AC6667721F6157400F329C0 /* Explore */,
 			);
 			path = Modules;
@@ -221,7 +239,7 @@
 		4AC6667E21F615E700F329C0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4AC6667F21F617A200F329C0 /* MainViewController.swift */,
+				4AC6668221F61D4A00F329C0 /* MainTabBarController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +249,40 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4AC6668421F61D6400F329C0 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				4AC6668721F61D8700F329C0 /* Timeline.storyboard */,
+				4AC6668521F61D7000F329C0 /* Views */,
+				4AC6668621F61D7400F329C0 /* ViewModels */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		4AC6668521F61D7000F329C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4AC6668921F61DAC00F329C0 /* TimelineViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4AC6668621F61D7400F329C0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4AC666A521F674AF00F329C0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4AC666A621F674C600F329C0 /* Storyboard.swift */,
+				4AC666A821F6765200F329C0 /* UIViewController.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		9E7188B69A0F556F1F4E0382 /* Frameworks */ = {
@@ -273,7 +325,6 @@
 				4AC6665421F6152D00F329C0 /* Sources */,
 				4AC6665521F6152D00F329C0 /* Frameworks */,
 				4AC6665621F6152D00F329C0 /* Resources */,
-				7E6E72253202A73AC20FA1A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,6 +405,7 @@
 			files = (
 				4AC6665221F6152D00F329C0 /* LaunchScreen.storyboard in Resources */,
 				4AC6664F21F6152D00F329C0 /* Assets.xcassets in Resources */,
+				4AC6668821F61D8700F329C0 /* Timeline.storyboard in Resources */,
 				4AC6664D21F6152C00F329C0 /* Explore.storyboard in Resources */,
 				4AC6667D21F615D900F329C0 /* Main.storyboard in Resources */,
 			);
@@ -398,34 +450,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7E6E72253202A73AC20FA1A9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxGramTests/Pods-RxGramTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
-				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxGramTests/Pods-RxGramTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8FD47992D4543139EB2CF502 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -457,16 +481,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxGram/Pods-RxGram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGramAPI/RxGramAPI.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGramAPI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,8 +531,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AC6668021F617A200F329C0 /* MainViewController.swift in Sources */,
 				4AC6664A21F6152C00F329C0 /* ExploreViewController.swift in Sources */,
+				4AC666A721F674C600F329C0 /* Storyboard.swift in Sources */,
+				4AC666A921F6765200F329C0 /* UIViewController.swift in Sources */,
+				4AC6668A21F61DAC00F329C0 /* TimelineViewController.swift in Sources */,
+				4AC6668321F61D4A00F329C0 /* MainTabBarController.swift in Sources */,
 				4AC6664821F6152C00F329C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,7 +714,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83875N28LW;
-				INFOPLIST_FILE = RxGram/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RxGram/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -702,7 +733,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83875N28LW;
-				INFOPLIST_FILE = RxGram/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RxGram/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

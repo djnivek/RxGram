@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  TimelineViewController.swift
 //  RxGram
 //
 //  Created by MACHADO KEVIN on 21/01/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class TimelineViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
